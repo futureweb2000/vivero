@@ -1,0 +1,12 @@
+{
+  "name": "Vivero",
+  "description": "Vivero de plantas",
+  "dependencies": {
+    "jQuery": "~1.7.4",
+    "angular": "~1.4.7"
+  },
+  "scripts": {
+    "server": "python -m SimpleHTTPServer 7000",
+    "stylus": "stylus -w -u nib app.styl"
+  }
+}

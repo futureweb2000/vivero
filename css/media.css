@@ -1,0 +1,45 @@
+@media screen and (min-width: 900px){
+
+	.header{
+		flex-direction:row;
+	}
+	.header .showNav{
+		display:  none;
+	}
+
+	.header .nav{
+		margin-right: 5em;
+		display: block;
+		border: 0;
+	}
+	.header .nav ul{
+		flex-direction:row;
+		padding:0;
+		border:0;
+		
+	}
+	.header .nav ul .nav-item{
+		padding:0;
+		border-bottom: 0;
+	}
+	.header .logo{
+		margin-left: 5em;
+		
+	}
+	.footer{
+
+		padding-bottom: 15px;
+	}
+	.footer .contact-ways{
+
+		flex-direction:row;
+	}
+	.footer .contact-ways .contact-ways-item{
+
+		margin:20px;
+	}
+	.footer .redes{
+
+		margin:20px 0;
+	}
+}
