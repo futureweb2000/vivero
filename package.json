@@ -6,7 +6,6 @@
     "angular": "~1.4.7"
   },
   "scripts": {
-    "server": "python -m SimpleHTTPServer 7000",
-    "stylus": "stylus -w -u nib app.styl"
+    "server": "python -m SimpleHTTPServer 7000"
   }
 }

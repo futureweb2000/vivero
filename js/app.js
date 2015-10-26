@@ -2,5 +2,5 @@
 
 $('.showNav').on('click', function(){
 
-	$('.nav').fadeToggle();
+	$('.nav ul').slideToggle(300,'linear');
 });
