@@ -1053,6 +1053,9 @@ margin 4em 0,
   left: 185px;
   top: 55px;
 }
+.font-size50 {
+  font-size: 50px !important;
+}
 .footer {
   width: 100%;
   background: url("../img/footer2.jpg");
