@@ -37,7 +37,7 @@ gulp.task('build:css', function(){
 		}))
 		.pipe(minifyCSS())
 		.pipe(gulp.dest(config.styles.output));
-
+});
 
 gulp.task('watch', function(){
 
