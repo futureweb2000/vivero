@@ -37,8 +37,8 @@ body
 				border-bottom 2px solid green
 				padding 10px 0
 				a
+					padding 0 .6em
 					text-transform uppercase
-					margin 0 .6em
 					border-top 3px solid transparent
 					padding-top .5em
 					transition all .5s
@@ -47,7 +47,11 @@ body
 					&:hover
 						border-top-color green
 						cursor pointer
-					
+						
+			.separator
+				font-size 1.3em	
+				position relative
+				top -3px
 			
 	.logo
 		margin 0
@@ -102,19 +106,27 @@ body
 					background #C50C0C
 .main
 	background #efefef
-	margin-top 1em
 	width 100%
+	padding-top 105px
 	.offer
-		background green
 		color white
+		// background url('http://photos.up-wallpaper.com/images247/f5hyy4xuj1l.jpg')
+		background url('http://zamnar.com/data/uploads/20/330686-green-tree.jpg')
+		// background #61A93E
 		display flex
+		background-size cover
 		flex-direction column
 		justify-content center
+		&-wrap
+			background rgba(0,0,0,.27)
+			padding 30px 0
+			
 		.wrap-item
 			margin 0
 			display flex
 			justify-content center
 			flex-wrap wrap
+			
 			.description-section
 				padding 1em 0
 				font-size 2em
@@ -128,7 +140,7 @@ body
 				img 
 					width 200px
 				&-name
-					color #ccc
+					color yellow
 					font-size 1.6em
 					margin .5em 0
 				&-description
@@ -149,6 +161,7 @@ body
 
 	.products       //<---Seccion de index
 		background #4B433C
+		// color #C2B59C
 		color white
 		display flex
 		flex-direction column
@@ -166,11 +179,13 @@ body
 				text-align center
 			
 	.our-sh
-		background #ccc
+		background url('http://photos.up-wallpaper.com/images247/f5hyy4xuj1l.jpg')
 		color white
+		background-size cover
 		display flex
 		flex-direction column
 		justify-content center
+		padding 20px 0 40px 0
 		.wrap-item
 			margin 0
 			display flex
@@ -440,6 +455,7 @@ body
 			flex-direction row
 			justify-content center
 			background #efefef
+			color #C2B59C
 			&-item
 				width 250px
 				display flex
@@ -480,6 +496,7 @@ body
 	width 35px
 	height 35px
 	background green
+	
 	transform rotate(45deg)
 	position relative
 	bottom -17px
@@ -511,7 +528,6 @@ body
 	border 1px solid gray
 	color black
 	width 270px
-	height 230px
 	margin 0 10px
 	margin-bottom 80px
 	cursor pointer
@@ -523,14 +539,26 @@ body
 	&-img
 		margin 0
 		width 100%
-		height 100%
+		height 230px
 		border-top 1px solid gray
-		
 		img
 			width 100%
 			height 100%
-			padding-bottom -3px
-			
+	&-footer
+		margin 0
+		background #f6f6f6
+		padding .3em .6em
+		display flex
+		justify-content space-between
+		&-price
+			margin 0
+			color #555
+			font-size 1.3em
+			list-style none
+		&-cat
+			margin 0
+			color #555
+			font-size 1.3em	
 .show-by
 	display flex
 	justify-content center
