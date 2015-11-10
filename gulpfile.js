@@ -4,6 +4,8 @@ var stylus = require('gulp-stylus');
 var nib = require('nib');
 var minifyCSS = require('gulp-minify-css');
 
+
+//ESTE OBJETO DE RUTAS ES PARA AUTOMATIZAR LAS RUTAS
 var config = {
 	styles: {
 		main: './src/styles/app.styl',
@@ -12,12 +14,16 @@ var config = {
 	},
 	html:{
 		watch: './src/*.html'
+	},
+
+	js:{
+		watch: './build/**/*.js'
 	}
 };
 
 
 
-
+// CREAR TAREA GULP, ESTA ES LA DEL SERVER
 gulp.task('server', function(){
 
 	gulp.src('./build')
@@ -41,8 +47,9 @@ gulp.task('build:css', function(){
 
 gulp.task('watch', function(){
 
-	gulp.watch(config.styles.watch, ['build:css'])
-	gulp.watch(config.html.watch,['build'])
+	gulp.watch(config.styles.watch, ['build:css']);
+	gulp.watch(config.html.watch,['build']);
+	gulp.watch(config.js.watch,['build']);
 })
 
 gulp.task('build', ['build:css']);
