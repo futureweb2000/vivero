@@ -1,0 +1,46 @@
+
+
+			
+		<div class="title-sections">
+			<div class="title">
+				<h2>Plantas</h2>
+			</div>
+			<div class="triangle-section"></div>
+		</div>
+		<article class="all-plants">
+			<div class="intro">
+				<h3 class="intro-title">Decenas de Plantas esperandote!</h3>
+				<p class="intro-description">Encuentra la planta que deseas, si no la tenemos en existencia; <em>Contactanos y la tendremos en pocos dias.</em> </p>
+				<form action="" class="search-form">
+				<input class="search-form-input" type="text" placeholder="Encuentra la planta que buscas..." autofocus ng-model="query">
+				<button class="search-form-input-send">GO!</button>
+				</form>
+			</div>
+		</article>
+		
+		<div class="show-by" ng-controller="PlantaController">
+			<a href="" class="show-by-category" ng-repeat="cate in categorias">{{cate}}</a>
+			
+		</div>
+
+		<article class="all-products" ng-controller="PlantaController">
+			<div class="product" ng-repeat="planta in plantas" ng-model="ro">
+			 	<h3 class="product-name">{{planta.nombre | uppercase}}</h3>
+			 	<figure class="product-img">
+			 		<img src="img/colgantes.jpg" alt="">
+			 	</figure>
+			 	<footer class="product-footer">
+			 		<p class="product-footer-price">${{planta.precio}}</p>
+			 		<p class="product-footer-cat">
+			 			{{planta.exposicion}}
+			 		</p>
+			 	</footer>
+			 </div>
+		</article>
+
+		<article class="phrase">
+			<div class="phrase-box">
+				<h2 class="phrase-box-text">"Si Supiera que el mundo se acaba manana, yo, hoy todavia plantaría un arbol"</h2>
+			</div>
+		</article>
+

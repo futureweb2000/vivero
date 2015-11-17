@@ -109,10 +109,11 @@ body
 .main
 	background #efefef
 	width 100%
+	margin-top 100px
 	.offer
 		color white
 		// background url('http://photos.up-wallpaper.com/images247/f5hyy4xuj1l.jpg')
-		background url('http://zamnar.com/data/uploads/20/330686-green-tree.jpg')
+		background url('../img/tree.jpg')
 		// background #61A93E
 		display flex
 		background-size cover
@@ -228,6 +229,7 @@ body
 						font-size 1.2em
 					&-text
 						margin 0
+						font-size 18px
 				&-logo
 					margin 0
 					width 80px
@@ -239,13 +241,13 @@ body
 						border-radius 50%
 						
 	.our-sh
-		background url('http://photos.up-wallpaper.com/images247/f5hyy4xuj1l.jpg')
+		background url('../img/back-tree.jpg')
 		color white
 		background-size cover
 		display flex
 		flex-direction column
 		justify-content center
-		padding 20px 0 40px 0
+		padding 20px 0 80px 0
 		.wrap-item
 			margin 0
 			display flex
@@ -641,7 +643,6 @@ body
 	
 	&-name
 		text-align center
-		text-transform uppercase
 		margin .5em 0
 	&-img
 		margin 0
@@ -775,7 +776,7 @@ body
 	display flex
 	flex-direction column
 	width 100%
-	height 70px
+	height 57px
 	justify-content center
 	position relative
 	.title
@@ -792,6 +793,15 @@ body
 	flex none
 	position relative 
 	top -12px	
+	
+.triangle-section
+	width 25px
+	height 25px
+	background green
+	transform rotate(45deg)
+	position absolute
+	top 42px
+	left 190px
 	
 .font-size50
 	font-size 50px !important
@@ -840,5 +850,7 @@ body
 			
 
 
+.active
+	box-shadow 0 0 3px red
 
 		

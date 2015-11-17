@@ -1,34 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>Vivero de plantas el mezquite</title>
-	<link rel="stylesheet" href="css/app.css">
-	<link rel="stylesheet" href="css/media.css">
-	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-</head>
-<body>
-	<header class="header">
-		<figure class="logo">
-			<img src="img/logo2.png" alt="">
-		</figure>
 
-		<nav class="nav">
-			<ul>
-				<li class="nav-item"><a href="index.html">inicio</a></li>
-				<li class="nav-item"><a href="plantas.html">plantas</a></li>
-				<li class="nav-item"><a href="nosotros.html">nosotros</a></li>
-				<li class="nav-item"><a href="asesorate.html">asesorate</a></li>
-				<li class="nav-item"><a href="contacto.html">contacto</a></li>
-
-			</ul>
-		</nav>
-	</header>
-	
-	<section class="main">
 		<div class="title-sections">
 			<div class="title">
 				<h2>Nosotros</h2>
@@ -117,16 +87,27 @@
 
 
 
-				<div class="tabs">
+				<div class="tabs" ng-controller="TabsController as tabs">
 					<div class="tabs-items">
-						<p class="item">Creamos</p>
-						<p class="item">Nuestra Empresa</p>
-						<p class="item">Historia</p>
+						<p class="item" ng-click = "tabs.selectTab(1)" ng-class="{active : tabs.tab === 1}">Creamos</p>
+						<p class="item" ng-click="tabs.selectTab(2)" ng-class="{active : tabs.tab === 2}">Nuestra Empresa</p> 
+						<p class="item" ng-click="tabs.selectTab(3)" ng-class="{ active : tabs.tab === 3}">Historia</p>
 					</div>
 					
 					<div class="tabs-show">
-						<p class="tabs-show-text">
-							Vivero el Mesquite es una empresa líder en la producción, comercialización y venta de plantas ornamentales en maceta y servicios a la jardinería; éstos siempre siendo brindados bajo los estándares más altos  de calidad y atención al cliente.
+						<p class="tabs-show-text" ng-show="tabs.tab === 1">
+							1Vivero el Mesquite es una empresa líder en la producción, comercialización y venta de plantas ornamentales en maceta y servicios a la jardinería; éstos siempre siendo brindados bajo los estándares más altos  de calidad y atención al cliente.
+							Buscamos siempre darle la mejor satisfaccion y desempeno en el area
+							les en maceta y servicios a la jardinería; éstos siempre siendo brindados bajo los estándares más altos  de calidad y atención al
+						</p>
+
+						<p class="tabs-show-text" ng-show="tabs.tab === 2">
+							2Vivero el Mesqs más altos  de calidad y atención al
+						</p>
+
+
+						<p class="tabs-show-text" ng-show="tabs.tab === 3">
+							3Vivero el M estándares más altos  de calidad y atención al cliente.
 							Buscamos siempre darle la mejor satisfaccion y desempeno en el area
 							les en maceta y servicios a la jardinería; éstos siempre siendo brindados bajo los estándares más altos  de calidad y atención al
 						</p>
@@ -206,52 +187,5 @@
 				</div>
 			</div>
 
-
-
-			
-
 		</div>
 
-
-			
-				
-			<br>
-			<br>
-			<br>
-	
-		
-
-	</section>
-
-	<footer class="footer">
-		<div class="contact-ways">
-			<div class="contact-ways-item">
-				<span class="material-icons">phone</span>
-				<p>375-107-89-76</p>
-			</div>
-
-			<div class="contact-ways-item">
-				<span class="material-icons">email</span>
-				<p>info@viveromezquite.com</p>
-			</div>
-
-			<div class="contact-ways-item">
-				<span class="material-icons">room</span>
-				<p>
-					melchor ocampo #214 <br/>juchitlan jal.
-				</p>
-			</div>
-			
-		</div>
-
-		<div class="redes">
-			<div class="item">f</div>
-			<div class="item">$5</div>
-		</div>
-
-		<div class="copy">
-			<p>© Derechos reservados de Vivero el Mezquite 2015</p>
-		</div>
-	</footer>
-</body>
-</html>
