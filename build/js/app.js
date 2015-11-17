@@ -45,73 +45,73 @@
 	}]);
 
 
-	// app.controller('TabsController', function(){
+	app.controller('TabsController', function(){
 
-	// 	this.tab = 1;
+		this.tab = 1;
 
-	// 	this.selectTab = function(tab){
+		this.selectTab = function(tab){
 
-	// 		this.tab = tab;
-	// 	}
-	// });
+			this.tab = tab;
+		}
+	});
 
-	// 		//Directivas//
+			//Directivas//
 
-	// app.directive('paginaPrincipal', function(){
-	// 	return{
-	// 		restrict: 'E',
-	// 		templateUrl: 'views/pagina-principal.html'
-	// 	}
+	app.directive('paginaPrincipal', function(){
+		return{
+			restrict: 'E',
+			templateUrl: 'views/pagina-principal.html'
+		}
 
-	// });
-
-
-	// app.directive('paginaContacto', function(){
-	// 	return{
-	// 		restrict: 'E',
-	// 		templateUrl: 'views/contacto.html'
-	// 	}
-
-	// });
+	});
 
 
-	// app.directive('paginaNosotros', function(){
-	// 	return{
-	// 		restrict: 'E',
-	// 		templateUrl: 'views/nosotros.html'
-	// 	}
+	app.directive('paginaContacto', function(){
+		return{
+			restrict: 'E',
+			templateUrl: 'views/contacto.html'
+		}
 
-	// });
+	});
 
-	// app.directive('paginaPlantas', function(){
-	// 	return{
-	// 		restrict: 'E',
-	// 		templateUrl: 'views/plantas.html'
-	// 	}
 
-	// });
+	app.directive('paginaNosotros', function(){
+		return{
+			restrict: 'E',
+			templateUrl: 'views/nosotros.html'
+		}
+
+	});
+
+	app.directive('paginaPlantas', function(){
+		return{
+			restrict: 'E',
+			templateUrl: 'views/plantas.html'
+		}
+
+	});
 
 
 	
 
 
 
-	// $('.showNav').on('click', function(){
+	$('.showNav').on('click', function(){
 
-	// 	$('.nav ul').slideToggle(300,'linear');
-	// });
+		$('.nav ul').slideToggle(300,'linear');
+	});
 
-	// loadGoogleIcons('https://fonts.googleapis.com/icon?family=Material+Icons');
+	loadGoogleIcons('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 
-	// //Cargar CSS desde JS para EVITE ser Bloqueantes
+	//Cargar CSS desde JS para EVITE ser Bloqueantes
 
-	// function loadGoogleIcons(url){
-	// 	var elem  = document.createElement('link');
-	// 	elem.rel = 'stylesheet';
-	// 	elem.href = url;
-	// 	document.head.appendChild(elem);
-	// }
+	function loadGoogleIcons(url){
+		var elem  = document.createElement('link');
+		elem.rel = 'stylesheet';
+		elem.href = url;
+		document.head.appendChild(elem);
+	}
 
 
 
