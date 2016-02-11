@@ -19,7 +19,7 @@ body
 		position absolute 
 		top 40px 
 		right 30px
-	
+		cursor pointer
 	.nav
 		margin 0
 		background white
@@ -52,42 +52,47 @@ body
 				font-size 1.3em	
 				position relative
 				top -3px
+				display none
 			
 	.logo
 		margin 0
 		width 11.2em
 		flex none
 		img
-			width 100%
-			height 100%
+			width 95%
+			height 95%
 .slide
 	margin-top 6.45em
 	width 100%
-	height 560px
+	// height 560px
+	height 220px
 	background url('../img/jardin.jpg')
 	background-size cover
 	.intro-welcome
 		margin 0
 		transform skew(13deg)
-		width 55%
+		width 80%
 		height 100%
 		background rgba(0, 0, 0, 0.4)
 		border-right 1px solid rgba(255,255,255, .8)
 		position relative 
-		left -70px
+		// left -70px
+		left 30px
 		display flex
 		justify-content center
 		align-items center
 		&-items
 			transform skew(-13deg)
 			flex-direction column
-			width 61%
+			width 90%
 			position relative
 			margin-top -20px
 			margin-left 5%
+			font-size .62em
+			
 			.title
 				font-family 'Lora' serif
-				font-size 35px
+				font-size 1.7em
 				margin 0
 			&-text
 				color white
@@ -120,7 +125,7 @@ body
 		flex-direction column
 		justify-content center
 		&-wrap
-			background rgba(0,0,0,.27)
+			background rgba(0,0,0,.4)
 			padding 30px 0
 			
 		.wrap-item
@@ -212,6 +217,7 @@ body
 		&-items
 			display flex
 			justify-content center
+			flex-wrap wrap
 			&-item
 				margin 1.3em .8em
 				width 270px
@@ -285,12 +291,15 @@ body
 			margin 0
 			display flex
 			justify-content center
+			flex-direction column
+			align-items center
 			form
 				margin 0 
 				display flex
 				flex-direction column
-				width 420px
-				margin-right 200px
+				// width 420px
+				// margin-right 200px
+				width 70%
 				textarea
 					height 160px
 				.input
@@ -309,6 +318,10 @@ body
 						color white
 						padding .2em 0
 						border-radius .3em
+						transition .4s
+						
+						&:hover
+							background green
 					&:focus
 						border-color green
 			.contacts
@@ -330,13 +343,18 @@ body
 			margin-top 50px
 			display flex
 			justify-content center
+			flex-direction column
+			align-items center
 			iframe
-				width 40%
-				height 400px
+				width 90%
+				// width 40%
+				// height 400px
+				height 50vh
+				margin-bottom 20px
 				border 1px solid gray
 				border-radius .2em
 				&:first-child 
-					margin-right 2.3em
+					// margin-right 2.3em
 				
 	
 	.us
@@ -346,10 +364,16 @@ body
 			display flex
 			justify-content center
 			margin-bottom 70px
+			flex-direction column
+			align-items center
 			.info
-				width 600px
+				// width 600px
+				width 80%
+				order 2
+				margin 0 auto
 				.wrap-progress
 					margin 0
+					
 					.title-bar
 						margin 0
 						position relative 
@@ -501,30 +525,57 @@ body
 									margin 0
 			.tabs
 				margin-top -15px
-				width 42%
+				width 95%
+				order 1
 				&-items
 					display flex
 					justify-content center
 					.item
 						padding .2em .4em	
 						margin 0 1em
-						font-size 1.2em
+						font-size 1.3em
 						border 1px solid gray
 						border-radius .3em
 						cursor pointer
 						transition .4s
 						color white
 						font-weight 500
+						position relative
 						background linear-gradient(30deg,#0E6D19 0%,#3fe7d9 100%)
 						&:hover
 							transform skew(-10deg)
 				&-show
-					padding .3em
-					margin .7em
-					border-top 1px solid gray
+					padding 1.8em
+					margin 1.8em auto
+					border-top 3px solid green
+					border-bottom 3px solid green
+					border-left 1px solid green
+					border-right 1px solid green
+					
+					background white
+					width 85%
+					
 					&-text
-						font-size 1.2em
+						font-size 1.3em
+						color brown
+						text-shadow 0 0 3px #A5A0A0
 						margin-top .3em
+						img
+							margin 15px 0
+						span
+							color green
+							border-bottom 3px solid green
+							margin-right 5px
+							text-shadow none
+						
+							
+						label
+							text-align center
+							font-size 1.3em
+							color #4A1616
+							font-style italic
+	
+						
 					
 		.offer
 			margin 0
@@ -533,6 +584,7 @@ body
 			justify-content center
 			background #efefef
 			color #C2B59C
+			flex-wrap wrap
 			&-item
 				width 250px
 				display flex
@@ -565,6 +617,7 @@ body
 						left 47%
 					&-title
 						margin 0
+						font-size 1.35em
 
 
 //OOCCSS
@@ -572,7 +625,7 @@ body
 	display flex
 	flex-direction column
 	background white
-	width 80%
+	width 75%
 	margin 20px auto
 	padding 10px 30px
 	border-radius .8em
@@ -590,7 +643,7 @@ body
 		margin 20px auto
 		div
 			border-right 1px dashed green
-			padding 0 50px
+			padding 0px
 			text-align center
 			&:last-child
 				border 0px
@@ -636,10 +689,11 @@ body
 	border-radius .3em .3em 2px 2px 
 	border 1px solid gray
 	color black
-	width 270px
-	margin 0 10px
+	width 260px
+	margin 0 15px
 	margin-bottom 80px
 	cursor pointer
+	box-shadow 0 0 20px gray
 	
 	&-name
 		text-align center
@@ -647,7 +701,7 @@ body
 	&-img
 		margin 0
 		width 100%
-		height 230px
+		height 270px
 		border-top 1px solid gray
 		img
 			width 100%
@@ -696,6 +750,24 @@ body
 		width 50%
 		border-bottom 2px dashed gray
 		margin 0 auto
+		
+
+.gallery
+	width 98%
+	border 1px solid gray
+	margin 0 auto
+	display flex
+	flex-direction row
+	flex-wrap wrap
+	justify-content center
+	&-item
+		width 370px
+		height 340px
+		box-shadow 0 0 20px #000
+		margin 25px 1.5%
+		img
+			width 100%
+			height 100%
 	
 .wrap-item
 	margin 0
@@ -710,10 +782,11 @@ body
 		text-align center
 .intro
 	text-align center
-	width 600px
+	width 94%
 	margin 0 auto
 	margin-bottom 50px
 	border-bottom 1px dashed lightgray
+	font-size 1.1em
 	&-title
 		color green
 		font-size 1.8em
@@ -767,7 +840,7 @@ body
 			margin 0
 			color white
 			text-align center
-			font-size 3em
+			font-size 1.8em
 			font-family 'Shadows Into Light'
 
 .title-sections
@@ -834,14 +907,19 @@ body
 		display flex
 		.item
 			margin 0 15px
-			background lightgray
+			background #3b5998
 			border-radius 50%
-			width 40px
-			height 40px
+			width 1.4em
+			height 1.4em
 			text-align center
-			line-height 40px
-			border 1px solid gray
+			line-height 1.4em
+			border 1px solid white
 			
+			font-size 1.3em
+			a
+				color white
+				text-decoration none
+				display block
 	.copy
 		color white
 		text-align center
@@ -849,8 +927,22 @@ body
 			margin 0
 			
 
-
 .active
-	box-shadow 0 0 3px red
+	box-shadow 0 0 7px #A25959
+	
+.active:after
+	// box-shadow 0 0 7px black
+	display inline-block
+	content ""
+	border-left 10px solid transparent
+	border-right 10px solid transparent
+	border-top 19px solid green
+	border-bottom 10px solid transparent
+	position absolute
+	bottom -31px
+	left 42%
+	
+	
+	
 
 		

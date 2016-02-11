@@ -1,3 +1,7 @@
+
+
+
+
 [
 	{
 		"nombre": "laurel de la india",
@@ -39,14 +43,7 @@
 		"categoria": "palmas",
 		"precio": "250",
 		"exposicion":"sol"
-	}
-	,{
-		"nombre": "plumosa",
-		"categoria": "palmas",
-		"precio": "1200",
-		"exposicion":"sol"
-	}
-	,{
+	},{
 		"nombre": "cuello de botella",
 		"categoria": "palmas",
 		"precio": "650",
@@ -111,12 +108,6 @@
 		"categoria": "palmas",
 		"precio": "250",
 		"exposicion":"sombra"
-	},
-	{
-		"nombre": "pirulo",
-		"categoria": "arboles",
-		"precio": "120",
-		"exposicion":"sol"
 	},{
 		"nombre": "araucaria",
 		"categoria": "arboles",
@@ -148,7 +139,7 @@
 		"precio": "300",
 		"exposicion":"sol"
 	},{
-		"nombre": "ahuhuete",
+		"nombre": "ahuehuete",
 		"categoria": "arboles",
 		"precio": "180",
 		"exposicion":"sol"
@@ -288,7 +279,7 @@
 		"precio": "170",
 		"exposicion":"sol"
 	},{
-		"nombre": "gunabano",
+		"nombre": "guanabano",
 		"categoria": "frutales",
 		"precio": "150",
 		"exposicion":"sol"
@@ -373,19 +364,9 @@
 		"precio": "150",
 		"exposicion":"sol"
 	},{
-		"nombre": "aralia de moño",
-		"categoria": "ornato",
-		"precio": "80",
-		"exposicion":"sol-sombra"
-	},{
 		"nombre": "aralia de concha",
 		"categoria": "ornato",
 		"precio": "80",
-		"exposicion":"sol-sombra"
-	},{
-		"nombre": "padanos",
-		"categoria": "ornato",
-		"precio": "250",
 		"exposicion":"sol-sombra"
 	},{
 		"nombre": "marginatas",
@@ -471,11 +452,6 @@
 		"nombre": "bismarkia",
 		"categoria": "ornato",
 		"precio": "4000",
-		"exposicion":"sol"
-	},{
-		"nombre": "cica thorosai",
-		"categoria": "ornato",
-		"precio": "3000",
 		"exposicion":"sol"
 	}
 
