@@ -1,9 +1,9 @@
 (function(){
 	var app = angular.module('vivero', ['ngRoute']);
 	app.config(['$routeProvider','$locationProvider', function($routeProvider, $locationProvider){
+			
 			$locationProvider.html5Mode(true);
 				
-
 			$routeProvider
 				.when('/', {
 
@@ -149,12 +149,11 @@
 		document.head.appendChild(elem);
 	}
 
-		loadGoogleIcons('https://fonts.googleapis.com/icon?family=Material+Icons');
-		loadGoogleIcons('https://fonts.googleapis.com/css?family=Roboto:400,300,700,700italic,400italic,300italic');
-		loadGoogleIcons('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
-		loadGoogleIcons('https://fonts.googleapis.com/css?family=Lora:400,700');
+	loadGoogleIcons('https://fonts.googleapis.com/icon?family=Material+Icons');
+	loadGoogleIcons('https://fonts.googleapis.com/css?family=Roboto:400,300,700,700italic,400italic,300italic');
+	loadGoogleIcons('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+	loadGoogleIcons('https://fonts.googleapis.com/css?family=Lora:400,700');
 
-	
 
 
 
