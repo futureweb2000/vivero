@@ -7,10 +7,22 @@
 	<title>Vivero de plantas el mezquite</title>
 	<link rel="stylesheet" href="./css/app.css">
 	<link rel="stylesheet" href="./css/media.css">
-<!-- 	<base href="/"> -->
-
-<style>
-		
+	<!-- <base href="/"> -->
+	<style>
+		.sent{
+			color:#fff !important;
+			text-align: center;
+			padding:30px 15px;
+			width:50%;
+			background: rgba(0,0,0,.4);
+			margin:30px auto;
+			border-radius: 6px;
+			position: absolute;
+			top:100px;
+			left:25%;
+			z-index: 10000;
+			border: 1px solid #ca0000;
+		}
 	</style>
 </head>
 <body>
@@ -48,13 +60,12 @@
 			</ul>
 		</nav>
 	</header>
-
-
-
 	
 
 	<section class="main">
-		
+		<h2 class="sent">Tu mensaje ha sido Enviado, Gracias por Contactarnos :) !</h2>
+
+			
 		<div class="slide" >
 		<div class="intro-welcome">
 			<div class="intro-welcome-items">
@@ -345,6 +356,7 @@
 			</div>
 		</article>
 
+
 	</section>
 
 
@@ -394,18 +406,26 @@
 	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/page.js/1.6.4/page.min.js"></script>
 
+<script type="text/php">
+<?php
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	$name = $_POST['name'];
+	$email = $_POST['email'];
+	$tel = $_POST['tel'];
+	$message = $_POST['message'];
+	$to = "caff1@outlook.es";
 
-  ga('create', 'UA-47240796-2', 'auto');
-  ga('send', 'pageview');
+	mail ($to, $subject, $message, "From: " . $name);
+	header('Location: contact_thankyou.html');
 
+?>
 </script>
 
+<script>
+	setTimeout(function(){
+		$('.sent').fadeOut();
+	}, 5000)
 
+</script>
 </body>
 </html>

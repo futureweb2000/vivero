@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="vivero">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Encuentra en nosotros el mejor provedor de plantas en la region sierra de amula. tenemos la mejor seleccion de plantas de ornato,frutales, Sol-Sombra">
+	<title>Vivero de plantas el mezquite</title>
+	<link rel="stylesheet" href="./css/app.css">
+	<link rel="stylesheet" href="./css/media.css">
+<!-- 	<base href="/"> -->
+</head>
+<body>
+	<header class="header">
+		<span class="showNav"><i class="material-icons">view_headline</i></span>
+		<figure class="logo">
+			<img src="./img/logo2.png" alt="">
+		</figure>
+
+		<nav class="nav">
+			<ul>
+				<li class="nav-item">
+					<a href="/">inicio</a>
+				</li>
+				 <span class="separator">|</span>
+
+				<li class="nav-item">
+					<a href="/plantas.html">plantas</a>
+				</li>
+				<span class="separator">|</span>
+				<li class="nav-item">
+					<a href="/nosotros.html">nosotros</a>
+				</li>
+				<span class="separator">|</span>
+
+				<li class="nav-item">
+					<a href="/galeria.html">Galería</a>
+				</li>
+				<span class="separator">|</span>
+
+				<li class="nav-item">
+					<a href="/contacto.html">contacto</a>
+				</li>
+
+			</ul>
+		</nav>
+	</header>
+	
+
+	<section class="main">
+		<div class="title-sections">
+			<div class="title">
+				<h2>Contactanos</h2>
+			</div>
+			<div class="triangle-section"></div>
+		</div>
+
+
+		<div class="contact">
+			
+			<div class="intro">
+				<h3 class="intro-title">Amaremos poder ayudarte contáctanos!</h3>
+				<p class="intro-description">Nos gusta crear todo nuestro trabajo con amor y dedicación, es por eso que te ayudaremos a encontrar la mejor solución a tu problema. <em>Animate y obtendrás muchos beneficios.</em> </p>
+			</div>
+
+			<div class="all-contact">
+				<form action="index.php" method="post">
+					<input class="input" type="text" placeholder="Nombre" autofocus name="name" autofocus>
+					<input class="input" type="text" placeholder="Teléfono" name="tel">
+					<input class="input" type="email" placeholder="E-mail" name="email">
+					<textarea placeholder="Escribe tu peticion aqui..." class="input" name="message">
+						
+					</textarea>
+					<input class="input" type="submit" value="Enviar">
+				</form>
+
+				<div class="contacts">
+					<div class="ways-contact">
+
+						<div class="ways-contact-item">
+							<span class="material-icons">email</span>
+							<p class="way">info@viveroelmezquite.com</p>
+						</div>
+						
+						<div class="ways-contact-item">
+							<span class="material-icons">phone</span>
+							<p class="way">375-107-89-76</p>
+						</div>
+						
+						<div class="ways-contact-item">
+							<span class="material-icons">room</span>
+							<p class="way">Carretera Guadalajara - Barra de navidad #121
+					Juchitlan jal.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3747.006646355851!2d-104.10018268564694!3d20.092009024471533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDA1JzMxLjIiTiAxMDTCsDA1JzUyLjgiVw!5e0!3m2!1ses!2smx!4v1446760293364" width="600" height="450" allowfullscreen></iframe>
+
+
+			<iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1ses!2smx!4v1446759959461!6m8!1m7!1ssvD6rkcX053MWmoQ4vqiMA!2m2!1d20.09200400321081!2d-104.0979940000812!3f119.26708020374791!4f-7.560161364205712!5f2.299968626952992" width="600" height="450" allowfullscreen></iframe>
+			</div>
+		</div>
+		
+
+		<article class="phrase">
+			<div class="phrase-box">
+				<h2 class="phrase-box-text">" Algun dia ese árbol que has cortado te hará falta para respirar! "</h2>
+			</div>
+		</article>
+
+	</section>
+
+
+
+
+	<footer class="footer">
+		<div class="contact-ways">
+			<div class="contact-ways-item">
+				<span class="material-icons">phone</span>
+				<p>375-107-89-76</p>
+			</div>
+			<div class="contact-ways-item">
+				<span class="material-icons">room</span>
+				<p>
+					Carretera Guadalajara - Barra de navidad<br/> #121
+					Juchitlan Jal.
+				</p>
+			</div>
+			<div class="contact-ways-item">
+				<span class="material-icons">email</span>
+				<p>info@viveroelmezquite.com</p>
+			</div>
+
+			
+			
+		</div>
+
+		<div class="redes">
+			<div>
+				<a href="https://www.facebook.com/Vivero-el-Mezquite-331146207087778/?fref=ts">
+					<img src="../img/facebook-icon.png" alt="" width="60px">
+				</a>
+		</div>
+			<!-- <div class="item">$5</div> -->
+		</div>
+
+		<div class="copy">
+			<p>© Vivero el Mezquite <span class="year"></span></p>
+		</div>
+	</footer>
+	 <script src="https://code.jquery.com/jquery-2.1.4.min.js">
+	 </script>
+
+	<script src="./js/angular.js">
+	</script>
+	<script src="./js/angular-route.min.js">
+	</script>
+	<script src="./js/app.js">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/page.js/1.6.4/page.min.js"></script>
+
+</body>
+</html>
+
+	

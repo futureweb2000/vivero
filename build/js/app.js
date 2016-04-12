@@ -1,48 +1,48 @@
 (function(){
 	var app = angular.module('vivero', ['ngRoute']);
-	app.config(['$routeProvider','$locationProvider', function($routeProvider, $locationProvider){
+	// app.config(['$routeProvider','$locationProvider', function($routeProvider, $locationProvider){
 			
-			$locationProvider.html5Mode(true);
+	// 		// $locationProvider.html5Mode(true);
 				
-			$routeProvider
-				.when('/', {
+	// 		$routeProvider
+	// 			.when('/', {
 
-					templateUrl: 'views/pagina-principal.html'
-					// controller: 'csdcsdController'
-					// controllerAs: 'asasCtrl'
-				})
-				.when('/plantas',{
+	// 				templateUrl: 'views/pagina-principal.html'
+	// 				// controller: 'csdcsdController'
+	// 				// controllerAs: 'asasCtrl'
+	// 			})
+	// 			.when('/plantas',{
 
-					templateUrl: 'views/plantas.html'
-					// controller: 'PlantaController'
-				})
-				.when('/nosotros',{
+	// 				templateUrl: 'views/plantas.html'
+	// 				// controller: 'PlantaController'
+	// 			})
+	// 			.when('/nosotros',{
 
-					templateUrl: 'views/nosotros.html'
-					// controller: 'TabsController'
-					// controllerAs: 'asasCtrl'
-				})
+	// 				templateUrl: 'views/nosotros.html'
+	// 				// controller: 'TabsController'
+	// 				// controllerAs: 'asasCtrl'
+	// 			})
 
-				.when('/galeria',{
+	// 			.when('/galeria',{
 
-					templateUrl: 'views/galeria.html'
-					// controller: 'TabsController'
-					// controllerAs: 'asasCtrl'
-				})
+	// 				templateUrl: 'views/galeria.html'
+	// 				// controller: 'TabsController'
+	// 				// controllerAs: 'asasCtrl'
+	// 			})
 
-				.when('/contacto',{
+	// 			.when('/contacto',{
 
-					templateUrl: 'views/contacto.html'
-					// controller: 'csdcsdController'
-					// controllerAs: 'asasCtrl'
-				})
-				.otherwise({
-					redirectTo: '/'
-				});
+	// 				templateUrl: 'views/contacto.html'
+	// 				// controller: 'csdcsdController'
+	// 				// controllerAs: 'asasCtrl'
+	// 			})
+	// 			.otherwise({
+	// 				redirectTo: '/'
+	// 			});
 
 
 
-		}]);
+	// 	}]);
 
 
 	

@@ -54,20 +54,7 @@
 		"categoria": "palmas",
 		"precio": "600",
 		"exposicion":"sol"
-	}
-	,{
-		"nombre": "kerpis",
-		"categoria": "palmas",
-		"precio": "280",
-		"exposicion":"sol"
-	}
-	,{
-		"nombre": "kerpis",
-		"categoria": "palmas",
-		"precio": "1600",
-		"exposicion":"sol"
-	}
-	,{
+	},{
 		"nombre": "alejandra",
 		"categoria": "palmas",
 		"precio": "480",
