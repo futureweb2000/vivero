@@ -7,6 +7,7 @@
 	<title>Vivero de plantas el mezquite</title>
 	<link rel="stylesheet" href="./css/app.css">
 	<link rel="stylesheet" href="./css/media.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<!-- <base href="/"> -->
 	<style>
 		.sent{
@@ -27,7 +28,7 @@
 </head>
 <body>
 	<header class="header">
-		<span class="showNav"><i class="material-icons">view_headline</i></span>
+		<span class="showNav"><i class="fa fa-reorder"></i></span>
 		<figure class="logo">
 			<img src="./img/logo2.png" alt="">
 		</figure>
@@ -413,7 +414,7 @@
 	$email = $_POST['email'];
 	$tel = $_POST['tel'];
 	$message = $_POST['message'];
-	$to = "caff1@outlook.es";
+	$to = "info@viveroelmezquite.com";
 
 	mail ($to, $subject, $message, "From: " . $name);
 	header('Location: contact_thankyou.html');
